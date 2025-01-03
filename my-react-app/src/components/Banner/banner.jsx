@@ -1,13 +1,8 @@
-import './Banner.css';
-
-// Banner component declaration with a function 
-function Banner(props) {
-  	return (
-		<div className='banner-style'>
-			{props.title && <h2 className='title-banner'>{props.title}</h2>}
-		  	<img src={props.image} alt={props.title} title={props.title} />
-		</div>
-  	);
-};
-
+function Banner() {
+    return (
+        <div className="banner">
+            <h1 className="banner__title">Chez vous, partout et ailleurs</h1>
+        </div>
+    );
+}
 export default Banner;
