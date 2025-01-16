@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/home";
 import About from "./pages/About/about";
@@ -8,6 +8,7 @@ import Header from "./components/Header/header";
 import Footer from './components/Footer/footer';
 
 function App() {
+  const [activeLodgement, setActive ] = useState(sessionStorage.getItem('activeId')); 
   return (
     <BrowserRouter>
         <Header />
