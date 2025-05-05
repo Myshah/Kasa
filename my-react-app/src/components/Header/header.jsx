@@ -1,21 +1,18 @@
-import { NavLink } from "react-router-dom";
-import logo210w from "../../assets/Logo/logo210w.png";
-import logo420w from "../../assets/Logo/logo420w.png";
+import logo from '../../assets/images/LOGO.jpg'
+import { Link } from 'react-router-dom';
+import NavBar from "../Nav/Nav";
+import "./Header.scss";
 
-function Header() {
-    return (
-        <header class="header">
-            <img
-                class="header__img"
-                src={logo210w}
-                alt="Logo de Kasa"
-                srcset={`${logo420w} 2x`}
-            />
-            <nav class="header__nav">
-                <NavLink to="/">Accueil</NavLink>
-                <NavLink to="/about">A Propos</NavLink>
-            </nav>
-        </header>
-    );
+function Header(){
+return(
+    <header>
+        <h1>
+            <Link to="/kasa_oc/">
+                <img src={logo} alt="logo KASA" />
+            </Link>
+        </h1>
+        <NavBar />
+    </header>);
 }
-export default Header;
+
+export default Header

@@ -11,14 +11,14 @@ function App() {
   const [activeLodgement, setActive ] = useState(sessionStorage.getItem('activeId')); 
   return (
     <BrowserRouter>
-        <Header />
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/Accommodation/:accommodationId" element={<Accommodation />} />
         <Route path="*" element={<Error />} />
       </Routes>
-        <Footer />
+      <Footer />
     </BrowserRouter>
   );
 }

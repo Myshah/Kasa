@@ -1,0 +1,46 @@
+.carrousel{
+    position: relative;
+    width:100%;
+    height: 500px;
+    color: white;
+    img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+    }
+    #previousImage,#nextImage{
+        position: absolute;
+        bottom: 40%;
+        font-size: 4rem;
+        z-index: 1;
+        cursor: pointer;
+        
+    }
+    #previousImage{
+        left: 1rem;
+    }
+    #nextImage{
+        right: 1rem;
+    }
+    #activeImage{
+        font-weight: bolder;
+        position: absolute;
+        bottom: 5%;
+        left: calc(50% - 1.5rem);
+        font-size: 1.5rem;
+        z-index: 1; 
+        cursor:default;
+    }
+    @media screen and (min-width: 320px) and (max-width: 700px) {
+
+            height: 21rem;
+            #previousImage,#nextImage{
+                font-size: 1.5rem;
+            }
+            #activeImage{
+                left: calc(50% - 0.85rem);
+            }
+    }
+}
