@@ -1,27 +1,21 @@
-
-
-
 .cardGallery{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
   width: 100%;
-  gap: 20px;
-  padding : 2rem 0;
+  padding : 2rem;
   border-radius: 25px;
   background-color: #F6F6F6;
   
   .card{
-    height: 30rem;
-    width: 30%;
+   // height: 340px;
     position: relative;
     box-sizing: border-box;
       a{
         display:block;
-        height: 100%; 
-        width: 100%;
+   //     height: 340px; 
+    //    width: 340px;
         border-radius: 25px;
-        background: linear-gradient(#F6F6F6 30%, black 70%);
         p{
           position: absolute;
           font-weight: 500;
@@ -34,6 +28,7 @@
           white-space: normal;
           overflow-wrap: break-word;
           color: white;
+          text-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
         }
       }
       img{
@@ -48,8 +43,11 @@
 
     @media screen and (min-width: 320px) and (max-width: 700px){
       padding:0;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      background-color: transparent;
+
       .card {
-        height: auto;
         width:100%;
         p{
           font-size: 1.1rem;
