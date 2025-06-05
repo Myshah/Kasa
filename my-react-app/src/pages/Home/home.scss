@@ -24,9 +24,15 @@
         background: linear-gradient(#F6F6F6 30%, black 70%);
         p{
           position: absolute;
-          width: 60%;
-          bottom: 5px;
-          left: 5px;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 25px;
+          bottom: 10px;
+          left: 15px;
+          right : auto;
+          max-width: 40%;
+          white-space: normal;
+          overflow-wrap: break-word;
           color: white;
         }
       }
