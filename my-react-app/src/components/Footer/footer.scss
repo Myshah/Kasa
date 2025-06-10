@@ -13,8 +13,17 @@ footer{
         width: auto;
         background-color: black;
     }
+        p {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 2rem 0;
+    }
     @media screen and (min-width: 320px) and (max-width: 700px) {
         min-height: 13rem;
         justify-content: center;
+        p {
+            max-width: 140px; // ← force le texte à revenir à la ligne
+            margin: 0 auto;
+        }
     }
 }

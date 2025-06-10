@@ -4,8 +4,10 @@
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    gap: 3rem;
     a{
         text-decoration: underline ;
+        color: black;
     }
     .notFound__code{
         font-weight: bold;
@@ -14,10 +16,23 @@
     p{
         font-size: 2rem;
     }
+    @media screen and (min-width: 701px) and (max-width: 1024px) {
+        gap: 2rem;
+        .notFound__code {
+            font-size: 9rem;
+        }
+        p {
+            font-size: 1.5rem;
+        }
+    }
     @media screen and (min-width: 320px) and (max-width: 700px) {
 
         .notFound__code{
             font-size: 6rem;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 220px;
         } 
     }
 }

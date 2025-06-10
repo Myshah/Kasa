@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
-  padding : 2rem;
+  padding : 3rem;
   border-radius: 25px;
   background-color: #F6F6F6;
   
@@ -52,6 +52,21 @@
         //opacity: 1;
         z-index: 0;
       }
+    }
+
+    @media screen and (min-width: 701px) and (max-width: 1024px) {
+      padding: 1.5rem;
+      grid-template-columns: repeat(2, 1fr); // 2 colonnes sur tablette
+      grid-gap: 30px;
+      background-color: #F6F6F6;
+
+      .card {
+       height: 300px;
+       font-size: 1rem;
+       img {
+        height: 100%;
+      }
+     }
     }
 
     @media screen and (min-width: 320px) and (max-width: 700px){
