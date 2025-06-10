@@ -1,7 +1,8 @@
 nav{
     display: flex;
     a{
-        font-size: 1.5rem;
+        //font-size: 1.5rem;
+        font-size: clamp(1.1rem, 2.5vw, 1.5rem);
         margin-left: 5rem;
         color: black;
         &:focus {
